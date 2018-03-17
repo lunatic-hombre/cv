@@ -1,0 +1,1 @@
+This repo is contains the CV of Bruce Hamilton, legendary programmer.  See index.html.
