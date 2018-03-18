@@ -15,6 +15,7 @@
   }
   h2 {
     border-bottom: 1px solid;
+    margin: 1em 0 0.25em 0;
   }
   .profession {
     flex: none;
@@ -83,12 +84,11 @@
   section.skills, section.education {
     display: flex;
     justify-content: space-evenly;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    padding: 0 1em;
   }
-  .technology, .university, .publications {
-    min-width: 280px;
+  .technology {
     width: 35vw;
-    max-width: 500px;
   }
   .technology > ul {
     justify-content: flex-start;
@@ -142,6 +142,9 @@
     header.top > h1 {
       font-size: 1em;
     }
+    section.technology, section.education {
+      flex-wrap: wrap;
+    }
   }
   @media all and (max-width: 780px) {
     body {
@@ -169,8 +172,8 @@
       border: 1px solid gray;
       border-top: none;
     }
-    section.projects {
-      page-break-after: always;
+    section.skills, section.education {
+      font-size: 0.9em;
     }
   }
   </style>
