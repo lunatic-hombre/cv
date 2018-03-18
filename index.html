@@ -89,8 +89,9 @@
     flex-wrap: wrap;
   }
   .technology, .university, .publications {
-    width: 35vw;
     min-width: 280px;
+    width: 35vw;
+    max-width: 500px;
   }
   .technology > ul {
     justify-content: flex-start;
@@ -147,6 +148,9 @@
     .projects iframe {
       display: none;
     }
+    .projects li {
+      width: 200px;
+    }
     .timeline .company {
       color: black;
       background-color: transparent;
@@ -166,7 +170,7 @@
       <h1 class="profession">Senior Software Developer</h1>
   </header>
   <div class="abstract">
-    A full-stack java developer with a passion for building dependable, highly-scalable applications.
+    A full-stack java developer with a passion for building dependable, large-scale applications.
   </div>
   <div class="timeline-wrapper">
     <header>Employment Timeline</header>
