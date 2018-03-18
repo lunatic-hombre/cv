@@ -117,6 +117,13 @@
   .education li .journal::after {
     content: ', ';
   }
+  .side-projects ul {
+    justify-content: center;
+  }
+  .side-projects li {
+    max-width: 280px;
+    margin: 0.5em;
+  }
   a {
     text-decoration: none;
   }
@@ -130,6 +137,11 @@
   .references-blurb {
     text-align: center;
     font-style: italic;
+  }
+  @media all and (max-width: 515px) {
+    header.top > h1 {
+      font-size: 1em;
+    }
   }
   @media all and (max-width: 780px) {
     body {
@@ -241,38 +253,6 @@
         </li>
       </ul>
     </section>
-    
-    <h2>Education</h2>
-    <section class="education">
-      <section class="university">
-        <h3>University of New Brunswick</h3>
-        <ul>
-          <li>
-            <header>Bachelors of Computer Science</header><aside><div>Honours in Theory &amp; Computation</div></aside>
-          </li>
-          <li>
-            <header>Bachelors of Science</header><aside><div>Major in Psychology</div></aside>
-          </li>
-        </ul>
-      </section>
-      <section class="publications">
-        <h3>Publications</h3>
-        <ul>
-          <li>
-            <header>Discovering Structured Event Logs from Unstructured Audit Trails for Workflow Mining</header>
-            <aside><span class="journal">Foundations of Intelligent Systems: 18th International Symposium</span><span class="date">Sep 14, 2009</span></aside>
-          </li>
-          <li>
-            <header>Quantifying Process Model Conformance Through Minimal-Cost Approximations</header>
-            <aside><span class="journal">University of New Brunswick Computer Science Faculty: Proceedings of the Sixth Research Exposition</span><span class="date">Apr 8, 2009</span></aside>
-          </li>
-          <li>
-            <header>Abductive Workflow Mining</header>
-            <aside><span class="journal">Business Process Management Workshops</span><span class="date">Sep 1, 2008</span></aside>
-          </li>
-        </ul>
-      </section>
-    </section>
 
     <h2>Skills</h2>
     <section class="skills">
@@ -311,6 +291,50 @@
       </div>
     </section>
   </main>
+    
+  <h2>Education</h2>
+  <section class="education">
+    <section class="university">
+      <h3>University of New Brunswick</h3>
+      <ul>
+        <li>
+          <header>Bachelors of Computer Science</header><aside><div>Honours in Theory &amp; Computation</div></aside>
+        </li>
+        <li>
+          <header>Bachelors of Science</header><aside><div>Major in Psychology</div></aside>
+        </li>
+      </ul>
+    </section>
+    <section class="publications">
+      <h3>Publications</h3>
+      <ul>
+        <li>
+          <header>Discovering Structured Event Logs from Unstructured Audit Trails for Workflow Mining</header>
+          <aside><span class="journal">Foundations of Intelligent Systems: 18th International Symposium</span><span class="date">Sep 14, 2009</span></aside>
+        </li>
+        <li>
+          <header>Quantifying Process Model Conformance Through Minimal-Cost Approximations</header>
+          <aside><span class="journal">University of New Brunswick Computer Science Faculty: Proceedings of the Sixth Research Exposition</span><span class="date">Apr 8, 2009</span></aside>
+        </li>
+        <li>
+          <header>Abductive Workflow Mining</header>
+          <aside><span class="journal">Business Process Management Workshops</span><span class="date">Sep 1, 2008</span></aside>
+        </li>
+      </ul>
+    </section>
+  </section>
+
+  <h2>Random Side Projects</h2>
+  <section class="side-projects">
+    <ul>
+      <li><a href="https://bitbucket.org/jambonilton/testwrangler">Test Wrangler</a><summary>A web app for test case management for scrum teams.</summary></li>
+      <li><a href="https://github.com/lunatic-hombre/dungeon-architect">Dungeon Architect</a><summary>An application for rendering Dungeons &amp; Dragons floor plans.</summary></li>
+      <li><a href="https://bitbucket.org/jambonilton/jtree">JTree</a><summary>A Java library for JSON/XML/CSV serialization, querying, and file persistence.</summary></li>
+      <li><a href="https://bitbucket.org/jambonilton/manticore">Manticore</a><summary>A simple Java-based database designed for embedded persistence in Java applications, using the Stream API.</summary></li>
+      <li><a href="https://bitbucket.org/jambonilton/chatmaster9000">CHATMASTER9000</a><summary>A minimalist chat application, currently running at <a href="http://www.9k.chat">http://www.9k.chat<a>.</summary></li>
+      <li><a href="https://bitbucket.org/jambonilton/cornswallop">Cornswallop</a><summary>A choose-your-own adventure command-line UI framework.</summary></li>
+    </ul>
+  </section>
 
   <footer>
     <div class="references-blurb">References available by request.</div>
@@ -322,5 +346,6 @@
         <li><a href="https://stackoverflow.com/users/4831823/bruce-hamilton">Stack Overflow</a></li>
       </ul>
   </footer>
+  
   </div>
 </body>
