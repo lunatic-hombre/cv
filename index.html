@@ -98,6 +98,7 @@
     padding: 2px 4px;
     border: 1px solid gray;
     border-radius: 5px;
+    max-height: 1em;
   }
   .education ul {
     flex-direction: column;
@@ -124,8 +125,11 @@
   a {
     text-decoration: none;
   }
-  footer {
+  .page > footer {
     margin: 1em 0 0 0;
+  }
+  .page > footer > .print {
+    display: none;
   }
   .profile-info {
     padding: 1em 0;
@@ -174,6 +178,16 @@
     }
     section.skills, section.education {
       font-size: 0.9em;
+    }
+    .page > footer {
+      margin-top: 4em;
+    }
+    .page > footer > .print {
+      display: block;
+      text-align: center;
+    }
+    .page > footer > *:not(.print) {
+      display: none;
     }
   }
   </style>
@@ -340,12 +354,22 @@
   </section>
 
   <footer>
+    <div class="print">
+      (You can find this CV at http://brucehamilton.win with links and videos.)
+    </div>
     <ul class="profile-info">
-      <li><a href="mailto:bruce.jh.hamilton@gmail.com">bruce.jh.hamilton@gmail.com</a>
+      <li><a href="mailto:bruce.jh.hamilton@gmail.com">bruce.jh.hamilton@gmail.com</a></li>
       <li><a href="https://www.linkedin.com/in/bruce-hamilton-00b59085/">LinkedIn</a></li>
       <li><a href="https://bitbucket.org/jambonilton/">Bitbucket</a></li>
       <li><a href="https://github.com/lunatic-hombre">Github</a></li>
       <li><a href="https://stackoverflow.com/users/4831823/bruce-hamilton">Stack Overflow</a></li>
+    </ul>
+    <ul class="profile-info print">
+      <li><b>Email:</b> bruce.jh.hamilton@gmail.com</li>
+      <li><b>LinkedIn:</b> https://www.linkedin.com/in/bruce-hamilton-00b59085/</li>
+      <li><b>Bitbucket:</b> https://bitbucket.org/jambonilton/</li>
+      <li><b>Github:</b> https://github.com/lunatic-hombre</li>
+      <li><b>StackOverflow:</b> https://stackoverflow.com/users/4831823/bruce-hamilton</li>
     </ul>
   </footer>
 
