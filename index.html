@@ -22,7 +22,7 @@
   }
   .abstract {
     text-align: center;
-    max-width: 400px;
+    max-width: 550px;
     min-width: 300px;
     margin: 0.5em auto;
   }
@@ -66,6 +66,25 @@
   .timeline > div:last-child .dates {
     border-right: 1px solid gray;
   }
+
+  .history {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .history > article {
+    width: 325px;
+    min-width: 200px;
+    padding: 0.5em;
+  }
+  .history > article > .timespan {
+    margin: 0.25em 0;
+  }
+  .history > article > header {
+    font-weight: bold;
+    font-size: 1.25em;
+  }
+
   ul {
     list-style-type: none;
     display: flex;
@@ -89,6 +108,7 @@
   }
   .technology {
     width: 35vw;
+    margin: 0.5em;
   }
   .technology > ul {
     justify-content: flex-start;
@@ -167,7 +187,7 @@
     .projects iframe {
       display: none;
     }
-    .projects li {
+    .projects li, .history > article {
       width: 200px;
     }
     .timeline .company {
@@ -199,7 +219,8 @@
       <h1 class="profession">Senior Software Developer</h1>
   </header>
   <div class="abstract">
-    A full-stack Java developer with a passion for building dependable, large-scale applications.
+    A full-stack Java developer with a decade of experience building web applications; seeking a contract
+    position while living in Wellington on a one-year working holiday from Canada.
   </div>
   <div class="timeline-wrapper">
     <header>Employment Timeline</header>
@@ -220,12 +241,73 @@
       <div class="company">Salesforce</div>
       <div class="dates">
         <span>2010</span>
-        <span>now</span>
+        <span>2018</span>
       </div>
     </div>
   </div>
   </div>
   <main>
+
+    <h2>Work History</h2>
+    <section class="history">
+      <article>
+        <header>Salesforce</header>
+        <div class="timespan">May 2010 - May 2018</div>
+        <content>
+          <h4>The Company:</h4>
+          <p>
+            Originally I was hired on at <i>radian6</i>, a social media marketing company.  A year later, we were acquired
+            by Salesforce, the world's leading Customer Relationship Management solution.  After the
+            acquisition, our focus broadened to include greater integration points with Salesforce and other subsidiaries,
+            but also largely remained the same.
+          </p>
+          <h4>The Role:</h4>
+          <p>
+            I designed and implemented a wide variety of back-end and front-end solutions for the Social Marketing suite
+            of products.  Some examples of projects that I've worked on in the past few years are detailed further in
+            the "Recent Projects" section of this CV.
+          </p>
+          <p>
+            While working at Salesforce, I helped shape the environment of the maritime offices by organizing a code
+            craftsmanship group, pushing forward continuous integration, and participating in a number of hackathons.
+            Over my tenure, I was promoted to Senior Software Engineer and was a collaborator on one patent.
+          </p>
+        </content>
+      </article>
+      <article>
+        <header>Source Security</header>
+        <div class="timespan">Sept 2009 - May 2010</div>
+        <content>
+          <h4>The Company:</h4>
+          <p>
+            A security-guard service based in Halifax, Nova Scotia (Canada).
+          </p>
+          <h4>The Role:</h4>
+          <p>I was in charge of developing an online scheduling system for events and shift-work for security guards.</p>
+          <p>
+            The service used a web &rarr; PHP &rarr; PostgreSQL stack.  I reported directly to the CEO, acting as a one-man R&D
+            department, and the de facto tech support for the office in the absence of other tech-savvy people.  This
+            position ended at the end of the contract period, whereupon I began working for radian6 (Salesforce).
+          </p>
+        </content>
+      </article>
+      <article>
+        <header>National Research Council</header>
+        <div class="timespan">Jan 2008 - May 2009</div>
+        <h4>The Company:</h4>
+        <p>
+          The Canadian federally-funded research institution.  I was employed by the Information Technology subdivision,
+          which was later de-funded by the conservative government after my departure.
+        </p>
+        <h4>The Role:</h4>
+        <p>
+          As part of the Social-Networking Applied to Privacy group, I worked as a junior researcher and programmer,
+          building software for workflow modeling and testing algorithms, and contributing to research articles.  I
+          started as a co-op student, then later earned a part-time role while finishing my degree.  I worked with Java,
+          LaTeX, and XML.
+        </p>
+      </article>
+    </section>
 
     <h2>Recent Projects</h2>
     <section class="projects">
