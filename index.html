@@ -22,57 +22,22 @@
   }
   .abstract {
     text-align: center;
-    max-width: 550px;
+    max-width: 650px;
     min-width: 300px;
-    margin: 0.5em auto;
+    margin: 0.75em auto;
   }
-  .timeline-wrapper {
-    margin-bottom: 2em;
-  }
-  .timeline-wrapper > header {
+  .contact {
     text-align: right;
-    font-style: italic;
-    padding: 0.2em 0;
   }
-  .timeline {
-    display: flex;
+  section {
+    margin: 1em 0;
   }
-  .timeline > div {
-    line-height: 1.4;
-    letter-spacing: 1px;
-  }
-  .timeline .company {
-    padding: 0.2em 1em 0.15em 0.5em;
-    color: white;
-  }
-  .timeline > .nrc .company {
-    background-color: #dc5c5c;
-  }
-  .timeline > .source .company {
-    background-color: #f59f1e;
-  }
-  .timeline > .salesforce {
-    flex: 1 8 auto;
-  }
-  .timeline > .salesforce .company {
-    background-color: #009ed5;
-  }
-  .timeline .dates {
-    border-left: 1px solid gray;
-    padding: 0 0.4em 0 0.45em;
-    display: flex;
-    justify-content: space-between;
-  }
-  .timeline > div:last-child .dates {
-    border-right: 1px solid gray;
-  }
-
-  .history {
+  .history, .education, .skills {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
-  .history > article {
+  .history > article, .technology, .skills-summary {
     width: 325px;
     min-width: 200px;
     padding: 0.5em;
@@ -100,15 +65,25 @@
   .projects li {
     width: 280px;
   }
-  section.skills, section.education {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: nowrap;
-    padding: 0 1em;
+  .skills-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.8em;
   }
-  .technology {
-    width: 35vw;
-    margin: 0.5em;
+  .skills-table th {
+    text-align: left;
+  }
+  .skills-table tr:nth-child(2n+1) {
+    background-color: #EEE;
+  }
+  .skills-table > thead > tr {
+    background-color: transparent !important;
+  }
+  .skills-table td:not(:first-child) {
+    text-align: right;
+  }
+  .skills-table td, .skills-table th {
+    padding: 0.15em 0.25em;
   }
   .technology > ul {
     justify-content: flex-start;
@@ -124,7 +99,7 @@
     flex-direction: column;
   }
   .education li {
-    margin: 0.5em 0;
+    margin: 0.5em;
   }
   .education li > header {
     font-weight: bold;
@@ -187,16 +162,10 @@
     .projects iframe {
       display: none;
     }
-    .projects li, .history > article {
+    .projects li, .history > article, .skills-summary, .technology {
       width: 200px;
     }
-    .timeline .company {
-      color: black;
-      background-color: transparent;
-      border: 1px solid gray;
-      border-top: none;
-    }
-    section.skills, section.education {
+    main {
       font-size: 0.9em;
     }
     .page > footer {
@@ -222,31 +191,71 @@
     A full-stack Java developer with a decade of experience building web applications; seeking a contract
     position while living in Wellington on a one-year working holiday from Canada.
   </div>
-  <div class="timeline-wrapper">
-    <header>Employment Timeline</header>
-  <div class="timeline">
-    <div class="nrc">
-      <div class="company">National Research Council</div>
-      <div class="dates">
-        2008
-      </div>
-    </div>
-    <div class="source">
-      <div class="company">Source Security</div>
-      <div class="dates">
-        2009
-      </div>
-    </div>
-    <div class="salesforce">
-      <div class="company">Salesforce</div>
-      <div class="dates">
-        <span>2010</span>
-        <span>2018</span>
-      </div>
-    </div>
-  </div>
-  </div>
   <main>
+    <div class="contact">
+      <div>bruce.jh.hamilton@gmail.com</div>
+      <div>+64 21 138 4904</div>
+    </div>
+
+    <h2>Skills</h2>
+    <section class="skills">
+      <div class="skills-summary">
+        <h3>Summary</h3>
+        <p>
+          Much of my expertise lies in building Java applications, though I've never stopped working with web development since I first learned to code.
+        </p>
+        <table class="skills-table">
+          <thead>
+            <th>Skillset</th><th>Experience</th><th>Skill Level</th>
+          </thead>
+          <tbody>
+            <tr><td>Java</td><td>10+ years</td><td>Master</td></tr>
+            <tr><td>Javascript (Vanilla)</td><td>10+ years</td><td>Master</td></tr>
+            <tr><td>CSS / HTML</td><td>10+ years</td><td>Master</td></tr>
+            <tr><td>Devops</td><td>10+ years</td><td>Journeyman</td></tr>
+            <tr><td>Backbone.js</td><td>3 years</td><td>Master</td></tr>
+            <tr><td>Test Automation</td><td>1.5 years</td><td>Journeyman</td></tr>
+            <tr><td>React.js</td><td>1 week</td><td>Apprentice</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="technology">
+        <h3>Technologies</h3>
+        <p>Listed below is a handful of libraries and languages I've used extensively.  This list is by no means exhaustive, and I would be happy to discuss your architecture and how my skills could work for you.</p>
+        <ul>
+          <li>java</li>
+          <li>javascript</li>
+          <li>node.js</li>
+          <li>ruby</li>
+          <li>selenium</li>
+          <li>php</li>
+          <li>mysql</li>
+          <li>postgresql</li>
+          <li>css</li>
+          <li>less</li>
+          <li>rest</li>
+          <li>spring</li>
+          <li>hibernate</li>
+          <li>dropwizard</li>
+          <li>docker</li>
+          <li>git</li>
+        </ul>
+      </div>
+      <div class="technology">
+        <h3>Methodologies</h3>
+        <p>Listed below is a set of techniques I employ when designing software.</p>
+        <ul>
+          <li>agile</li>
+          <li>test-driven development</li>
+          <li>test design and analysis</li>
+          <li>hybrid development</li>
+          <li>functional programming</li>
+          <li>continuous integration</li>
+          <li>scrum</li>
+          <li>kanban</li>
+        </ul>
+      </div>
+    </section>
 
     <h2>Work History</h2>
     <section class="history">
@@ -353,87 +362,50 @@
       </ul>
     </section>
 
-    <h2>Skills</h2>
-    <section class="skills">
-      <div class="technology">
-        <h3>Technologies</h3>
-        <p>Listed below is a handful of libraries and languages I've used extensively.  This list is by no means exhaustive, and I would be happy to discuss your architecture and how my skills could work for you.</p>
+    <h2>Education</h2>
+    <section class="education">
+      <section class="university">
+        <h3>University of New Brunswick</h3>
         <ul>
-          <li>java</li>
-          <li>javascript</li>
-          <li>node.js</li>
-          <li>ruby</li>
-          <li>selenium</li>
-          <li>php</li>
-          <li>mysql</li>
-          <li>postgresql</li>
-          <li>css</li>
-          <li>less</li>
-          <li>rest</li>
-          <li>spring</li>
-          <li>docker</li>
-          <li>git</li>
+          <li>
+            <header>Bachelors of Computer Science</header><aside><div>Honours in Theory &amp; Computation</div></aside>
+          </li>
+          <li>
+            <header>Bachelors of Science</header><aside><div>Major in Psychology</div></aside>
+          </li>
         </ul>
-      </div>
-      <div class="technology">
-        <h3>Methodologies</h3>
-        <p>Listed below is a set of techniques I employ when designing software.</p>
+      </section>
+      <section class="publications">
+        <h3>Publications</h3>
         <ul>
-          <li>agile</li>
-          <li>test-driven development</li>
-          <li>hybrid development</li>
-          <li>functional programming</li>
-          <li>continuous integration</li>
-          <li>scrum</li>
-          <li>kanban</li>
+          <li>
+            <header>Discovering Structured Event Logs from Unstructured Audit Trails for Workflow Mining</header>
+            <aside><span class="journal">Foundations of Intelligent Systems: 18th International Symposium</span><span class="date">Sep 14, 2009</span></aside>
+          </li>
+          <li>
+            <header>Quantifying Process Model Conformance Through Minimal-Cost Approximations</header>
+            <aside><span class="journal">University of New Brunswick Computer Science Faculty: Proceedings of the Sixth Research Exposition</span><span class="date">Apr 8, 2009</span></aside>
+          </li>
+          <li>
+            <header>Abductive Workflow Mining</header>
+            <aside><span class="journal">Business Process Management Workshops</span><span class="date">Sep 1, 2008</span></aside>
+          </li>
         </ul>
-      </div>
+      </section>
+    </section>
+
+    <h2>Random Side Projects</h2>
+    <section class="side-projects">
+      <ul>
+        <li><a href="https://bitbucket.org/jambonilton/testwrangler">Test Wrangler</a><summary>A web app for test case management for scrum teams.</summary></li>
+        <li><a href="https://github.com/lunatic-hombre/dungeon-architect">Dungeon Architect</a><summary>An application for rendering Dungeons &amp; Dragons floor plans.</summary></li>
+        <li><a href="https://bitbucket.org/jambonilton/jtree">JTree</a><summary>A Java library for JSON/XML/CSV serialization, querying, and file persistence.</summary></li>
+        <li><a href="https://bitbucket.org/jambonilton/manticore">Manticore</a><summary>A simple Java-based database designed for embedded persistence in Java applications, using the Stream API.</summary></li>
+        <li><a href="https://bitbucket.org/jambonilton/chatmaster9000">CHATMASTER9000</a><summary>A minimalist chat application, currently running at <a href="http://www.9k.chat">http://www.9k.chat<a>.</summary></li>
+        <li><a href="https://bitbucket.org/jambonilton/cornswallop">Cornswallop</a><summary>A choose-your-own adventure command-line UI framework.</summary></li>
+      </ul>
     </section>
   </main>
-    
-  <h2>Education</h2>
-  <section class="education">
-    <section class="university">
-      <h3>University of New Brunswick</h3>
-      <ul>
-        <li>
-          <header>Bachelors of Computer Science</header><aside><div>Honours in Theory &amp; Computation</div></aside>
-        </li>
-        <li>
-          <header>Bachelors of Science</header><aside><div>Major in Psychology</div></aside>
-        </li>
-      </ul>
-    </section>
-    <section class="publications">
-      <h3>Publications</h3>
-      <ul>
-        <li>
-          <header>Discovering Structured Event Logs from Unstructured Audit Trails for Workflow Mining</header>
-          <aside><span class="journal">Foundations of Intelligent Systems: 18th International Symposium</span><span class="date">Sep 14, 2009</span></aside>
-        </li>
-        <li>
-          <header>Quantifying Process Model Conformance Through Minimal-Cost Approximations</header>
-          <aside><span class="journal">University of New Brunswick Computer Science Faculty: Proceedings of the Sixth Research Exposition</span><span class="date">Apr 8, 2009</span></aside>
-        </li>
-        <li>
-          <header>Abductive Workflow Mining</header>
-          <aside><span class="journal">Business Process Management Workshops</span><span class="date">Sep 1, 2008</span></aside>
-        </li>
-      </ul>
-    </section>
-  </section>
-
-  <h2>Random Side Projects</h2>
-  <section class="side-projects">
-    <ul>
-      <li><a href="https://bitbucket.org/jambonilton/testwrangler">Test Wrangler</a><summary>A web app for test case management for scrum teams.</summary></li>
-      <li><a href="https://github.com/lunatic-hombre/dungeon-architect">Dungeon Architect</a><summary>An application for rendering Dungeons &amp; Dragons floor plans.</summary></li>
-      <li><a href="https://bitbucket.org/jambonilton/jtree">JTree</a><summary>A Java library for JSON/XML/CSV serialization, querying, and file persistence.</summary></li>
-      <li><a href="https://bitbucket.org/jambonilton/manticore">Manticore</a><summary>A simple Java-based database designed for embedded persistence in Java applications, using the Stream API.</summary></li>
-      <li><a href="https://bitbucket.org/jambonilton/chatmaster9000">CHATMASTER9000</a><summary>A minimalist chat application, currently running at <a href="http://www.9k.chat">http://www.9k.chat<a>.</summary></li>
-      <li><a href="https://bitbucket.org/jambonilton/cornswallop">Cornswallop</a><summary>A choose-your-own adventure command-line UI framework.</summary></li>
-    </ul>
-  </section>
 
   <footer>
     <div class="print">
