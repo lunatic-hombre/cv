@@ -40,7 +40,12 @@
   .history > article, .technology, .skills-summary {
     width: 325px;
     min-width: 200px;
-    padding: 0.5em;
+    padding: 0.5em 1em;
+  }
+  .history > article {
+    width: 425px;
+    min-width: 200px;
+    padding: 0.5em 1.5em;
   }
   .history > article > .timespan {
     margin: 0.25em 0;
@@ -123,6 +128,9 @@
   a {
     text-decoration: none;
   }
+  p, ul {
+    line-height: 1.3;
+  }
   .page > footer {
     margin: 1em 0 0 0;
   }
@@ -135,10 +143,6 @@
   }
   .profile-info li {
     margin: 0 0.5em;
-  }
-  .references-blurb {
-    text-align: center;
-    font-style: italic;
   }
   @media all and (max-width: 515px) {
     header.top > h1 {
@@ -188,11 +192,11 @@
   <div class="page">
   <header class="top">
       <h1 class="fullname">Bruce Hamilton</h1>
-      <h1 class="profession">Senior Software Developer</h1>
+      <h1 class="profession">Senior Full-Stack Engineer</h1>
   </header>
   <div class="abstract">
-    A full-stack Java developer with a decade of experience building web applications; seeking a contract
-    position while living in Wellington on a one-year working holiday from Canada.
+    A full-stack Java developer with a decade of experience building web applications; seeking contract
+    work while in Wellington on a working holiday from Canada.
   </div>
   <main>
     <div class="contact">
@@ -217,6 +221,7 @@
             <tr><td>CSS / HTML</td><td>10+ years</td><td>Master</td></tr>
             <tr><td>Devops</td><td>10+ years</td><td>Journeyman</td></tr>
             <tr><td>Backbone.js</td><td>3 years</td><td>Master</td></tr>
+            <tr><td>Angular</td><td>1 years</td><td>Journeyman</td></tr>
             <tr><td>Test Automation</td><td>1.5 years</td><td>Journeyman</td></tr>
             <tr><td>React.js</td><td>1 week</td><td>Apprentice</td></tr>
           </tbody>
@@ -263,7 +268,25 @@
     <h2>Work History</h2>
     <section class="history">
       <article>
-        <header>Salesforce</header>
+        <header>Department of Internal Affairs NZ</header>
+        <div class="timespan">June 2018 - Now</div>
+        <content>
+          <h4>The Company:</h4>
+          <p>
+            The Te Ara Manaaki program, under the Service Delivery and Operations (SDO) Branch of the Department of
+            Internal Affairs (DIA), responsible for delivering Identity and Life Event related products and services
+            to New Zealanders.  I was contracted through Accenture.
+          </p>
+          <h4>The Role:</h4>
+          <p>
+            Helped build end-to-end solutions for New Zealanders to apply for marriage licenses, certificates, and
+            citizenship.  The products were build with an Angular front-end with Java and Node.js back-ends, using
+            Microsoft Azure as the cloud provider and Azure Devops for continuous integration.
+          </p>
+        </content>
+      </article>
+      <article>
+        <header>Salesforce Marketing Cloud</header>
         <div class="timespan">May 2010 - May 2018</div>
         <content>
           <h4>The Company:</h4>
@@ -400,8 +423,8 @@
     <h2>Random Side Projects</h2>
     <section class="side-projects">
       <ul>
+        <li><a href="https://bardly.io">Bardly</a><summary>An online table-top game atmosphere playback application.</summary></li>
         <li><a href="https://bitbucket.org/jambonilton/testwrangler">Test Wrangler</a><summary>A web app for test case management for scrum teams.</summary></li>
-        <li><a href="https://github.com/lunatic-hombre/dungeon-architect">Dungeon Architect</a><summary>An application for rendering Dungeons &amp; Dragons floor plans.</summary></li>
         <li><a href="https://bitbucket.org/jambonilton/jtree">JTree</a><summary>A Java library for JSON/XML/CSV serialization, querying, and file persistence.</summary></li>
         <li><a href="https://bitbucket.org/jambonilton/manticore">Manticore</a><summary>A simple Java-based database designed for embedded persistence in Java applications, using the Stream API.</summary></li>
         <li><a href="https://bitbucket.org/jambonilton/chatmaster9000">CHATMASTER9000</a><summary>A minimalist chat application, currently running at <a href="http://www.9k.chat">http://www.9k.chat<a>.</summary></li>
