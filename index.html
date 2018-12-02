@@ -178,8 +178,11 @@
     .skills > div {
       padding: 0.5em;
     }
-    .projects li, .history > article, .skills > div {
+    .projects li, .skills > div {
       width: 200px;
+    }
+    .history article {
+      width: 270px;
     }
     main {
       font-size: 0.9em;
@@ -195,6 +198,9 @@
     }
     .page > footer > *:not(.print) {
       display: none;
+    }
+    .history-header, .education-header {
+      page-break-before: always;
     }
   }
   </style>
@@ -215,7 +221,7 @@
       <a href="tel:+64-21-138-4904">+64 21 138 4904</a>
     </div>
 
-    <h2>Skills</h2>
+    <h2 class="skills-header">Skills</h2>
     <section class="skills">
       <div class="skills-summary">
         <h3>Summary</h3>
@@ -276,7 +282,51 @@
       </div>
     </section>
 
-    <h2>Work History</h2>
+    <h2 class="projects-header">Recent Projects</h2>
+    <section class="projects">
+      <ul>
+        <li>
+          <h3>Command Center</h3>
+          <p>A web app designed for showcasing Salesforce data on big screen displays.</p>
+          <iframe width="270" height="150" src="https://www.youtube.com/embed/LB7CUHu7dMA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <p>Originally built as a series of one-off contracts through professional services, we adopted this project and added a wide array of new integrations and product improvements, like custom theming and remote control.</p>
+          <p><b>Tech Used:</b> MySQL, Java, Tomcat, Guice, Stripes, Redis, Underscore.js, jQuery, Backbone.js, Jasmine, Cucumber, Ruby, Selenium</p>
+          <b>Interesting Features I Added:</b>
+          <ul class="list">
+            <li>Central Remote Control</li>
+            <li>Real-time Adult Content Filtering</li>
+            <li>Smart Theming</li>
+          </ul>
+        </li>
+        <li>
+          <h3>Social Studio</h3>
+          <p>Salesforce Marketing Cloud's flagship social marketing solution - a complete solution for managing a company's brand over social networks</p>
+          <iframe width="270" height="150" src="https://www.youtube.com/embed/295brS23_4I" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <p>This was a large initiative shared between two recent Salesforce acquisitions, radian6 and Buddy Media, to merge their products and deliver a fresh new product.</p>
+          <p><b>Tech Used:</b> MySQL, Java, Jetty, Guice, Dropwizard, Redis, Underscore.js, jQuery, Backbone.js, Jasmine, PHP</p>
+          <b>Interesting Features I Added:</b>
+          <ul class="list">
+            <li>Core Framework</li>
+            <li>Cross-stack Solution</li>
+            <li>Analytics' Patented Querying Solution</li>
+          </ul>
+        </li>
+        <li>
+          <h3>Social Customer Service</h3>
+          <p>A real-time social media customer service platform, built into Salesforce core.</p>
+          <iframe width="270" height="150" src="https://www.youtube.com/embed/OD7AnP-2brU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <p>This project was the first integration point between Salesforce core and radian6's social data. The basic concept is to use social media as a new avenue for customer service, to better connect with the modern customer.</p>
+          <p><b>Tech Used:</b> MySQL, Java, SOAP, Spring, Apache Camel, ActiveMQ</p>
+          <b>Interesting Features I Added:</b>
+          <ul class="list">
+            <li>Protected Content Proxy</li>
+            <li>Resilient Integration API</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <h2 class="history-header">Work History</h2>
     <section class="history">
       <article>
         <header>Department of Internal Affairs NZ</header>
@@ -355,51 +405,7 @@
       </article>
     </section>
 
-    <h2>Recent Projects</h2>
-    <section class="projects">
-      <ul>
-        <li>
-          <h3>Command Center</h3>
-          <p>A web app designed for showcasing Salesforce data on big screen displays.</p>
-          <iframe width="270" height="150" src="https://www.youtube.com/embed/LB7CUHu7dMA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          <p>Originally built as a series of one-off contracts through professional services, we adopted this project and added a wide array of new integrations and product improvements, like custom theming and remote control.</p>
-          <p><b>Tech Used:</b> MySQL, Java, Tomcat, Guice, Stripes, Redis, Underscore.js, jQuery, Backbone.js, Jasmine, Cucumber, Ruby, Selenium</p>
-          <b>Interesting Features I Added:</b>
-          <ul class="list">
-            <li>Central Remote Control</li>
-            <li>Real-time Adult Content Filtering</li>           
-            <li>Smart Theming</li>
-          </ul>
-        </li>
-        <li>
-          <h3>Social Studio</h3>
-          <p>Salesforce Marketing Cloud's flagship social marketing solution - a complete solution for managing a company's brand over social networks</p>
-          <iframe width="270" height="150" src="https://www.youtube.com/embed/295brS23_4I" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          <p>This was a large initiative shared between two recent Salesforce acquisitions, radian6 and Buddy Media, to merge their products and deliver a fresh new product.</p>
-          <p><b>Tech Used:</b> MySQL, Java, Jetty, Guice, Dropwizard, Redis, Underscore.js, jQuery, Backbone.js, Jasmine, PHP</p>
-          <b>Interesting Features I Added:</b>
-          <ul class="list">
-            <li>Core Framework</li>
-            <li>Cross-stack Solution</li>
-            <li>Analytics' Patented Querying Solution</li>
-          </ul>
-        </li>
-        <li>
-          <h3>Social Customer Service</h3>
-          <p>A real-time social media customer service platform, built into Salesforce core.</p>
-          <iframe width="270" height="150" src="https://www.youtube.com/embed/OD7AnP-2brU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          <p>This project was the first integration point between Salesforce core and radian6's social data. The basic concept is to use social media as a new avenue for customer service, to better connect with the modern customer.</p>
-          <p><b>Tech Used:</b> MySQL, Java, SOAP, Spring, Apache Camel, ActiveMQ</p>
-          <b>Interesting Features I Added:</b>
-          <ul class="list">
-            <li>Protected Content Proxy</li>
-            <li>Resilient Integration API</li>
-          </ul>
-        </li>
-      </ul>
-    </section>
-
-    <h2>Education</h2>
+    <h2 class="education-header">Education</h2>
     <section class="education">
       <section class="university">
         <h3>University of New Brunswick</h3>
@@ -431,7 +437,7 @@
       </section>
     </section>
 
-    <h2>Random Side Projects</h2>
+    <h2 class="side-projects-header">Random Side Projects</h2>
     <section class="side-projects">
       <ul>
         <li><a href="https://bardly.io">Bardly</a><summary>An online table-top game atmosphere playback application. Sorry, the source is not public.</summary></li>
