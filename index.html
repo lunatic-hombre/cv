@@ -40,8 +40,8 @@
     flex-wrap: wrap;
     justify-content: center;
   }
-  .history > article, .technology, .skills-summary {
-    width: 325px;
+  .skills > div {
+    width: 295px;
     min-width: 200px;
     padding: 0.5em 1em;
   }
@@ -175,7 +175,10 @@
     .projects iframe {
       display: none;
     }
-    .projects li, .history > article, .skills-summary, .technology {
+    .skills > div {
+      padding: 0.5em;
+    }
+    .projects li, .history > article, .skills > div {
       width: 200px;
     }
     main {
@@ -185,8 +188,10 @@
       margin-top: 4em;
     }
     .page > footer > .print {
-      display: block;
-      text-align: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
     }
     .page > footer > *:not(.print) {
       display: none;
