@@ -1,0 +1,293 @@
+a {
+  text-decoration: none;
+}
+
+p, ul {
+  line-height: 1.3;
+}
+
+.page {
+  font-family: sans-serif;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 5vw;
+}
+
+header.top {
+  display: flex;
+  justify-content: space-between;
+}
+
+h2 {
+  border-bottom: 1px solid;
+  margin: 2em 0 0.25em 0;
+}
+
+.profession {
+  flex: none;
+}
+
+.abstract {
+  text-align: center;
+  max-width: 650px;
+  min-width: 300px;
+  margin: 0.75em auto;
+}
+
+.contact {
+  text-align: right;
+}
+
+section {
+  margin: 1em 0;
+}
+
+.education {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.history article {
+  display: flex;
+}
+.history article header {
+  text-align: right;
+  flex: none;
+  width: 250px;
+  padding-right: 1rem;
+  border-right: 1px solid;
+}
+.history article content {
+  max-width: 500px;
+  padding: 0 0 1em 1em;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.25);
+}
+.history article:last-child content {
+  border-bottom: none;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+ul.list {
+  list-style-type: disc;
+  display: block;
+  padding-left: 1em;
+}
+
+.projects li {
+  width: 280px;
+}
+
+.technology > ul {
+  justify-content: flex-start;
+}
+.technology li {
+  margin: 0.2em 0.3em;
+  padding: 2px 4px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  max-height: 1em;
+}
+
+.education > section {
+  margin: 0 1em;
+}
+.education ul {
+  flex-direction: column;
+}
+.education li {
+  margin: 0.5em;
+}
+.education li > header {
+  font-weight: bold;
+}
+.education li > aside {
+  font-size: 0.8em;
+}
+.education li .journal::after {
+  content: ", ";
+}
+
+.side-projects ul {
+  justify-content: center;
+}
+.side-projects li {
+  max-width: 280px;
+  margin: 0.5em 1em;
+}
+
+.page > footer {
+  margin: 1em 0 0 0;
+}
+.page > footer > .print {
+  display: none;
+}
+
+.profile-info {
+  padding: 1em 0;
+  border-top: 1px solid;
+}
+.profile-info li {
+  margin: 0 0.5em;
+}
+
+section.skills {
+  display: flex;
+  justify-content: center;
+}
+section.skills h3 {
+  margin: 10px 0 15px 0;
+  border-bottom: 1px solid;
+}
+section.skills .skills-description {
+  max-width: 400px;
+}
+section.skills .skills-area {
+  display: inline-flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+section.skills .skills-charts {
+  display: flex;
+  margin: 0 2rem 2rem 0;
+}
+section.skills .skills-chart {
+  margin: 0 1rem;
+  border-collapse: collapse;
+}
+section.skills .skills-chart td:first-child {
+  vertical-align: top;
+  padding: 0px 5px 5px;
+  text-align: right;
+}
+section.skills .skills-chart td:first-child .tech {
+  font-weight: bold;
+}
+section.skills .skills-chart .stat {
+  padding: 0 0 5px 3px;
+}
+section.skills .skills-chart .stat > .bar {
+  border: 1px solid rgba(0, 0, 0, 0.35);
+  display: inline-block;
+  height: 0.75rem;
+  border-radius: 4px;
+  width: 5rem;
+}
+section.skills .skills-chart .stat > .bar > div:first-child {
+  background-color: limeGreen;
+  height: 0.75rem;
+}
+section.skills .skills-chart .stat > .bar > .master {
+  width: 5rem;
+}
+section.skills .skills-chart .stat > .bar > .journeyman {
+  width: 3rem;
+}
+section.skills .skills-chart .stat > .bar > .apprentice {
+  width: 1.3rem;
+}
+section.skills .skills-chart .exp {
+  color: rgba(0, 0, 0, 0.65);
+  font-size: 0.75em;
+}
+section.skills .skills-other {
+  max-width: 400px;
+}
+section.skills .skills-other h4 {
+  margin: 14px 0 5px 0;
+}
+section.skills .skills-other ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+}
+section.skills .skills-other ul > li {
+  padding-left: 0px;
+  margin: 2px;
+  padding: 3px;
+  border: 1px solid rgba(0, 0, 0, 0.35);
+  border-radius: 4px;
+  padding: 2px 5px;
+}
+
+@media all and (max-width: 515px) {
+  header.top > h1 {
+    font-size: 1em;
+  }
+
+  section.technology, section.education {
+    flex-wrap: wrap;
+  }
+
+  section.history header {
+    width: 100px;
+  }
+
+  section.skills .skills-charts {
+    margin: 0 0 1rem 0;
+  }
+  section.skills .skills-charts .skills-chart {
+    margin: 0 0.3rem;
+  }
+}
+@media all and (max-width: 780px) {
+  body {
+    font-size: 14px;
+  }
+
+  header.top > h1 {
+    font-size: 1.5em;
+  }
+
+  section.history header {
+    width: 150px;
+  }
+}
+@media all and (max-width: 515px) {
+  header.top > h1 {
+    font-size: 1em;
+  }
+}
+@media print {
+  .projects iframe {
+    display: none;
+  }
+
+  .projects li {
+    width: 200px;
+  }
+
+  main {
+    font-size: 0.9em;
+  }
+
+  .page > footer {
+    margin-top: 4em;
+  }
+
+  .page > footer > .print {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .page > footer > *:not(.print) {
+    display: none;
+  }
+
+  .history-header, .education-header, .break {
+    page-break-before: always;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
