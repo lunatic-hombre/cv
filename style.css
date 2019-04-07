@@ -29,7 +29,7 @@ h2 {
 
 .abstract {
   text-align: center;
-  max-width: 650px;
+  max-width: 550px;
   min-width: 300px;
   margin: 0.75em auto;
 }
@@ -197,6 +197,8 @@ section.skills .skills-chart .stat > .bar > .apprentice {
   width: 1.3rem;
 }
 section.skills .skills-chart .exp {
+  text-align: right;
+  margin-top: 2px;
   color: rgba(0, 0, 0, 0.65);
   font-size: 0.75em;
 }
@@ -224,26 +226,6 @@ section.skills .skills-other ul > li {
   padding: 2px 5px;
 }
 
-@media all and (max-width: 515px) {
-  header.top > h1 {
-    font-size: 1em;
-  }
-
-  section.technology, section.education {
-    flex-wrap: wrap;
-  }
-
-  section.history header {
-    width: 100px;
-  }
-
-  section.skills .skills-charts {
-    margin: 0 0 1rem 0;
-  }
-  section.skills .skills-charts .skills-chart {
-    margin: 0 0.3rem;
-  }
-}
 @media all and (max-width: 780px) {
   body {
     font-size: 14px;
@@ -258,8 +240,27 @@ section.skills .skills-other ul > li {
   }
 }
 @media all and (max-width: 515px) {
+  .page {
+    padding: 1.15em;
+  }
+
   header.top > h1 {
     font-size: 1em;
+  }
+
+  section.technology, section.education {
+    flex-wrap: wrap;
+  }
+
+  section.history header {
+    width: 100px;
+  }
+
+  section.skills .skills-overview {
+    margin: 0 0 1rem 0;
+  }
+  section.skills .skills-charts .skills-chart {
+    margin: 0 0.3rem;
   }
 }
 @media print {
