@@ -158,6 +158,9 @@ section.skills {
     margin: 10px 0 15px 0;
     border-bottom: 1px solid;
   }
+  .skills-overview {
+    margin: 0 2rem 2rem 0;
+  }
   .skills-description {
     max-width: 400px;
   }
@@ -168,11 +171,13 @@ section.skills {
   }
   .skills-charts {
     display: flex;
-    margin: 0 2rem 2rem 0;
   }
   .skills-chart {
-    margin: 0 1rem;
     border-collapse: collapse;
+
+    &:first-child {
+      margin-right: 1rem;
+    }
 
     td:first-child {
       vertical-align: top;
@@ -211,6 +216,7 @@ section.skills {
     }
   }
   .skills-other {
+    margin: 0 0 1rem 1rem;
     max-width: 400px;
     h4 {
       margin: 14px 0 5px 0;

@@ -145,6 +145,9 @@ section.skills h3 {
   margin: 10px 0 15px 0;
   border-bottom: 1px solid;
 }
+section.skills .skills-overview {
+  margin: 0 2rem 2rem 0;
+}
 section.skills .skills-description {
   max-width: 400px;
 }
@@ -155,11 +158,12 @@ section.skills .skills-area {
 }
 section.skills .skills-charts {
   display: flex;
-  margin: 0 2rem 2rem 0;
 }
 section.skills .skills-chart {
-  margin: 0 1rem;
   border-collapse: collapse;
+}
+section.skills .skills-chart:first-child {
+  margin-right: 1rem;
 }
 section.skills .skills-chart td:first-child {
   vertical-align: top;
@@ -197,6 +201,7 @@ section.skills .skills-chart .exp {
   font-size: 0.75em;
 }
 section.skills .skills-other {
+  margin: 0 0 1rem 1rem;
   max-width: 400px;
 }
 section.skills .skills-other h4 {
