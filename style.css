@@ -155,8 +155,11 @@ h5 > a {
     display: block;
   }
   .card-list > li {
-    margin: 12px auto;
+    margin: 12px auto;    
+    max-width: 520px;
     page-break-inside: avoid;
+    border-bottom: 1px solid;
+    box-shadow: none;
   }
   section.education, section.side-projects {
     page-break-before: always;
