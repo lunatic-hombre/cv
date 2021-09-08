@@ -119,6 +119,9 @@ a {
 h5 > a {
   color: var(--header-color);
 }
+h5.date {
+  font-size: 0.77em;
+}
 
 @media (max-width: 360px) {
   .contact-info {
